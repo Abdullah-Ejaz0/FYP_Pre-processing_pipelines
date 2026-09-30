@@ -1,0 +1,21 @@
+# Processed data lives outside the repo; nothing under here should ever appear,
+# but ignore common local mistakes anyway.
+data_processed/
+*.png
+*.jpg
+*.jpeg
+
+# Manifests we DO want tracked (small CSV/JSON) — re-allow explicitly.
+!manifests/**/*.csv
+!manifests/**/*.json
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+notebooks/scratch/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

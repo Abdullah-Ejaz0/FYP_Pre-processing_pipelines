@@ -1,0 +1,415 @@
+source,patient_id,filename,label,image_path,width,height,mode,is_landscape,has_clinical_reading,clinical_text,has_left_mask,has_right_mask,left_mask_path,right_mask_path
+montgomery,0001,MCUCXR_0001_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0001_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 027Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0001_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0001_0.png
+montgomery,0002,MCUCXR_0002_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0002_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 040Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0002_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0002_0.png
+montgomery,0003,MCUCXR_0003_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0003_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 021Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0003_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0003_0.png
+montgomery,0004,MCUCXR_0004_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0004_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 011Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0004_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0004_0.png
+montgomery,0005,MCUCXR_0005_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0005_0.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 033Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0005_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0005_0.png
+montgomery,0006,MCUCXR_0006_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0006_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 070Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0006_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0006_0.png
+montgomery,0008,MCUCXR_0008_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0008_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 053Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0008_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0008_0.png
+montgomery,0011,MCUCXR_0011_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0011_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 029Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0011_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0011_0.png
+montgomery,0013,MCUCXR_0013_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0013_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 047Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0013_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0013_0.png
+montgomery,0015,MCUCXR_0015_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0015_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 048Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0015_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0015_0.png
+montgomery,0016,MCUCXR_0016_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0016_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 052Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0016_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0016_0.png
+montgomery,0017,MCUCXR_0017_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0017_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 008Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0017_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0017_0.png
+montgomery,0019,MCUCXR_0019_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0019_0.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 033Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0019_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0019_0.png
+montgomery,0020,MCUCXR_0020_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0020_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 024Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0020_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0020_0.png
+montgomery,0021,MCUCXR_0021_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0021_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 041Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0021_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0021_0.png
+montgomery,0022,MCUCXR_0022_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0022_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 054Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0022_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0022_0.png
+montgomery,0023,MCUCXR_0023_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0023_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 054Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0023_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0023_0.png
+montgomery,0024,MCUCXR_0024_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0024_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 037Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0024_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0024_0.png
+montgomery,0026,MCUCXR_0026_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0026_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 010Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0026_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0026_0.png
+montgomery,0027,MCUCXR_0027_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0027_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 038Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0027_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0027_0.png
+montgomery,0028,MCUCXR_0028_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0028_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 031Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0028_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0028_0.png
+montgomery,0029,MCUCXR_0029_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0029_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 019Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0029_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0029_0.png
+montgomery,0030,MCUCXR_0030_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0030_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 053Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0030_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0030_0.png
+montgomery,0031,MCUCXR_0031_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0031_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 053Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0031_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0031_0.png
+montgomery,0035,MCUCXR_0035_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0035_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 020Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0035_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0035_0.png
+montgomery,0038,MCUCXR_0038_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0038_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 031Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0038_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0038_0.png
+montgomery,0040,MCUCXR_0040_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0040_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 050Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0040_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0040_0.png
+montgomery,0041,MCUCXR_0041_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0041_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 011Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0041_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0041_0.png
+montgomery,0042,MCUCXR_0042_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0042_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 009Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0042_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0042_0.png
+montgomery,0043,MCUCXR_0043_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0043_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 048Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0043_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0043_0.png
+montgomery,0044,MCUCXR_0044_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0044_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 034Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0044_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0044_0.png
+montgomery,0045,MCUCXR_0045_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0045_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 052Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0045_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0045_0.png
+montgomery,0046,MCUCXR_0046_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0046_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 016Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0046_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0046_0.png
+montgomery,0047,MCUCXR_0047_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0047_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 035Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0047_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0047_0.png
+montgomery,0048,MCUCXR_0048_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0048_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 026Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0048_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0048_0.png
+montgomery,0049,MCUCXR_0049_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0049_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 028Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0049_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0049_0.png
+montgomery,0051,MCUCXR_0051_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0051_0.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 021Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0051_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0051_0.png
+montgomery,0052,MCUCXR_0052_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0052_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 030Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0052_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0052_0.png
+montgomery,0053,MCUCXR_0053_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0053_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 030Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0053_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0053_0.png
+montgomery,0054,MCUCXR_0054_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0054_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 025Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0054_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0054_0.png
+montgomery,0055,MCUCXR_0055_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0055_0.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 020Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0055_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0055_0.png
+montgomery,0056,MCUCXR_0056_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0056_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 032Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0056_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0056_0.png
+montgomery,0057,MCUCXR_0057_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0057_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 032Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0057_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0057_0.png
+montgomery,0058,MCUCXR_0058_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0058_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 044Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0058_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0058_0.png
+montgomery,0059,MCUCXR_0059_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0059_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 035Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0059_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0059_0.png
+montgomery,0060,MCUCXR_0060_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0060_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 004Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0060_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0060_0.png
+montgomery,0061,MCUCXR_0061_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0061_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 008Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0061_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0061_0.png
+montgomery,0062,MCUCXR_0062_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0062_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 025Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0062_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0062_0.png
+montgomery,0063,MCUCXR_0063_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0063_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 034Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0063_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0063_0.png
+montgomery,0064,MCUCXR_0064_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0064_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 047Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0064_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0064_0.png
+montgomery,0068,MCUCXR_0068_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0068_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 056Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0068_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0068_0.png
+montgomery,0069,MCUCXR_0069_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0069_0.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 050Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0069_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0069_0.png
+montgomery,0070,MCUCXR_0070_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0070_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 045Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0070_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0070_0.png
+montgomery,0071,MCUCXR_0071_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0071_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 033Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0071_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0071_0.png
+montgomery,0072,MCUCXR_0072_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0072_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 043Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0072_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0072_0.png
+montgomery,0074,MCUCXR_0074_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0074_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 056Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0074_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0074_0.png
+montgomery,0075,MCUCXR_0075_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0075_0.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 014Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0075_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0075_0.png
+montgomery,0077,MCUCXR_0077_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0077_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 008Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0077_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0077_0.png
+montgomery,0079,MCUCXR_0079_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0079_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 044Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0079_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0079_0.png
+montgomery,0080,MCUCXR_0080_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0080_0.png,4892,4020,L,True,True,"Patient's Sex: O 
+Patient's Age: 005Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0080_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0080_0.png
+montgomery,0081,MCUCXR_0081_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0081_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 018Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0081_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0081_0.png
+montgomery,0082,MCUCXR_0082_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0082_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 020Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0082_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0082_0.png
+montgomery,0083,MCUCXR_0083_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0083_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 052Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0083_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0083_0.png
+montgomery,0084,MCUCXR_0084_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0084_0.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 043Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0084_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0084_0.png
+montgomery,0085,MCUCXR_0085_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0085_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 056Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0085_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0085_0.png
+montgomery,0086,MCUCXR_0086_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0086_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 028Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0086_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0086_0.png
+montgomery,0087,MCUCXR_0087_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0087_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 044Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0087_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0087_0.png
+montgomery,0089,MCUCXR_0089_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0089_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 044Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0089_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0089_0.png
+montgomery,0090,MCUCXR_0090_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0090_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 044Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0090_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0090_0.png
+montgomery,0091,MCUCXR_0091_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0091_0.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 023Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0091_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0091_0.png
+montgomery,0092,MCUCXR_0092_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0092_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 044Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0092_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0092_0.png
+montgomery,0094,MCUCXR_0094_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0094_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 065Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0094_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0094_0.png
+montgomery,0095,MCUCXR_0095_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0095_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 053Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0095_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0095_0.png
+montgomery,0096,MCUCXR_0096_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0096_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 043Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0096_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0096_0.png
+montgomery,0097,MCUCXR_0097_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0097_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 016Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0097_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0097_0.png
+montgomery,0099,MCUCXR_0099_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0099_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 030Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0099_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0099_0.png
+montgomery,0100,MCUCXR_0100_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0100_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 039Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0100_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0100_0.png
+montgomery,0101,MCUCXR_0101_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0101_0.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 017Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0101_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0101_0.png
+montgomery,0102,MCUCXR_0102_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0102_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 045Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0102_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0102_0.png
+montgomery,0103,MCUCXR_0103_0.png,normal,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0103_0.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 032Y
+normal",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0103_0.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0103_0.png
+montgomery,0104,MCUCXR_0104_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0104_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 059Y
+inactive TB scars LUL, unchanged for 2Y, pt previously treated DOT (17Y ago) for pan-sensitive disease",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0104_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0104_1.png
+montgomery,0108,MCUCXR_0108_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0108_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 040Y
+extensive cavitary TB smear and culture positive involving LUL lungula and some areas in rt lung as well; pt had previously normal CXR (1Y ago) but positive TST and contact with active case",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0108_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0108_1.png
+montgomery,0113,MCUCXR_0113_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0113_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 084Y
+bilateral miliary nodules diffusely with RML infiltrate and right pleural effusion; an old calcified granuloma is present behind heart in the LLL; all findings consistent with active TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0113_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0113_1.png
+montgomery,0117,MCUCXR_0117_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0117_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 085Y
+stable CXR since 6M; off Rx since 6M (same pt as MCUCXR_0113_1)",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0117_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0117_1.png
+montgomery,0126,MCUCXR_0126_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0126_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 046Y
+large right pleural effusion, positive TST, TB pleural effusion likely",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0126_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0126_1.png
+montgomery,0140,MCUCXR_0140_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0140_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 034Y
+small LUL calcified granuloma; pt on rx for culture positive psoas abscess with abdominal lymphadenopathy since 6M",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0140_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0140_1.png
+montgomery,0141,MCUCXR_0141_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0141_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 027Y
+LUL infiltrate, ? small areas of cavitation, IMP: active TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0141_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0141_1.png
+montgomery,0142,MCUCXR_0142_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0142_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 043Y
+cavitary infiltrate near left hilum consistent with TB in superior segment LLL",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0142_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0142_1.png
+montgomery,0144,MCUCXR_0144_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0144_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 067Y
+smear positive, active TB LUL apex",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0144_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0144_1.png
+montgomery,0150,MCUCXR_0150_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0150_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 032Y
+extensive infiltrates bilaterally with large cavity in RUL and a moderate pleural effusion on the left. AFB smears and RNA probes pos for MTB. Active TB, cavitary.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0150_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0150_1.png
+montgomery,0162,MCUCXR_0162_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0162_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 049Y
+RUL apical fibrotic disease with some calcifications; extensive irregular infiltrates in left lung with a large area of cavitation/ findings consistent with old inactive disease in RL and new active TB in LL. On the lordotic view, in the rt apex a large thin walled cavity is visible, making active disease in the area likely as well.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0162_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0162_1.png
+montgomery,0166,MCUCXR_0166_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0166_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 049Y
+NO REPORT (same pt as MCUCXR_0162_1)",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0166_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0166_1.png
+montgomery,0170,MCUCXR_0170_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0170_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 049Y
+CXR similar to prior views 1M and 2M ago with some slight improvement; on HRZ(E)x2 months, AFB smears neg now, will switch to HR only (same pt as MCUCXR_0166_1, MCUCXR_0162_1)",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0170_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0170_1.png
+montgomery,0173,MCUCXR_0173_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0173_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 054Y
+improved infiltrates in both lungs; a cavity is now visible in lingula compared with 1M ago. culture positive, pan-sensitive, on HRZ(E) since 1M",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0173_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0173_1.png
+montgomery,0182,MCUCXR_0182_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0182_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 030Y
+pleural TB, on treatment",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0182_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0182_1.png
+montgomery,0188,MCUCXR_0188_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0188_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 061Y
+cavitary disease RUL with possible small loculated pneumothorax adjacent; has multiuple coarse nodules in RLL as well as lesser amounts in LLL; pt has h/o prior treatment 1Y (6Y ago); no comparison films available; relapsed disease highly likely. pt grew NTM from several specimens, not MTB.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0188_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0188_1.png
+montgomery,0194,MCUCXR_0194_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0194_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 073Y
+h/o TB rx in xxx 44Y ago with IN PAS SM; has rt apical dense fibrosis, calcification rt lower lung and pleural angle blunting; all compared with inactive disease and h/o treatment.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0194_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0194_1.png
+montgomery,0195,MCUCXR_0195_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0195_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 044Y
+has inactive appearing scars in LUL; h/o treatment in hospital 17Y ago for 6M in xxx. No comparison films. Recommend followup CXR in 6M. Findings consistent with inactive treated disease.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0195_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0195_1.png
+montgomery,0196,MCUCXR_0196_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0196_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 026Y
+dense scarring in LUL with volume loss, lesser scarring in RUL; appears similar to old filmes from 3Y ago and 4Y ago. Treated 4Y ago for 6M for INH resistant TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0196_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0196_1.png
+montgomery,0203,MCUCXR_0203_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0203_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 068Y
+bilateral changes of cavitary TB in upper lobes, more extensive on the right; the RML appears to be involved as well.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0203_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0203_1.png
+montgomery,0213,MCUCXR_0213_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0213_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 089Y
+inactive scars RML. has completed treatment",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0213_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0213_1.png
+montgomery,0218,MCUCXR_0218_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0218_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 046Y
+inactive and partly calcified scars and granulomas in RUL. pt completed 4HRZE 4HP DOT for neg culture smear (positive disease)",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0218_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0218_1.png
+montgomery,0223,MCUCXR_0223_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0223_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 067Y
+improving infiltrate in LUL",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0223_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0223_1.png
+montgomery,0228,MCUCXR_0228_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0228_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 032Y
+positive improvement in cavities, infiltrates, and left effusion",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0228_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0228_1.png
+montgomery,0243,MCUCXR_0243_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0243_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 054Y
+improving infiltrate, active TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0243_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0243_1.png
+montgomery,0251,MCUCXR_0251_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0251_1.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 077Y
+RUL fibrocavitary disease with volume loss and tracheal deviation to right; COPD scoliosis;",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0251_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0251_1.png
+montgomery,0253,MCUCXR_0253_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0253_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 031Y
+worsening diffuse infiltrate bilaterally with fine nodular appearance; recent PCP treatment; recurrent PCP likely although miliary TB is also observed.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0253_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0253_1.png
+montgomery,0254,MCUCXR_0254_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0254_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 033Y
+stable inactive scars in RUL; post treatment for abscillary TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0254_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0254_1.png
+montgomery,0255,MCUCXR_0255_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0255_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 033Y
+stable inactive scars in RUL; post treatment for abscillary TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0255_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0255_1.png
+montgomery,0258,MCUCXR_0258_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0258_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 088Y
+active PTB with compicating CHF condition",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0258_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0258_1.png
+montgomery,0264,MCUCXR_0264_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0264_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 015Y
+active TB; cavitary infiltrarte LUL; non-consolidated;",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0264_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0264_1.png
+montgomery,0266,MCUCXR_0266_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0266_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 047Y
+peripheral homogeneous infiltrate LUL; active pneumonia likely",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0266_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0266_1.png
+montgomery,0275,MCUCXR_0275_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0275_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 034Y
+inactive scars unchanged for 6M",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0275_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0275_1.png
+montgomery,0282,MCUCXR_0282_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0282_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 051Y
+inactive TB scars",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0282_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0282_1.png
+montgomery,0289,MCUCXR_0289_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0289_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 052Y
+RUL cavitary infiltrate; positive smear",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0289_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0289_1.png
+montgomery,0294,MCUCXR_0294_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0294_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 063Y
+inactive TB scars LUL",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0294_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0294_1.png
+montgomery,0301,MCUCXR_0301_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0301_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 047Y
+persistent rt pleural peel with some interval improvement with focal atelectasis in rt lung; anterior wedging of T5, T6 with loss of intervertebral disc space. Findings consistent with h/o spinal TB and pleural TB. Currently on Rx.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0301_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0301_1.png
+montgomery,0309,MCUCXR_0309_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0309_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 089Y
+improvements after Rx. Has pleural, pulmonary, and probably percardial TB, pan-sensitive",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0309_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0309_1.png
+montgomery,0311,MCUCXR_0311_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0311_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 089Y
+on Rx for culture proven TB. has been clearing of infiltrates in te rt lung. thre is some re-accomodation of pleural fluid along lateral left chest wall.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0311_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0311_1.png
+montgomery,0313,MCUCXR_0313_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0313_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 015Y
+improvements. LUL cavity has closed.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0313_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0313_1.png
+montgomery,0316,MCUCXR_0316_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0316_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 016Y
+improved LUL infiltrate and cavity. Active TB on therapy.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0316_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0316_1.png
+montgomery,0331,MCUCXR_0331_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0331_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 047Y
+inactive appearing RUL TB scars",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0331_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0331_1.png
+montgomery,0334,MCUCXR_0334_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0334_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 024Y
+RUL infiltrate consistent with TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0334_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0334_1.png
+montgomery,0338,MCUCXR_0338_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0338_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 035Y
+LUL inactive scars and some volume loss. h/o treatment 5 years ago.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0338_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0338_1.png
+montgomery,0348,MCUCXR_0348_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0348_1.png,4892,4020,L,True,True,"Patient's Sex: F 
+Patient's Age: 069Y
+scoliosis to the left with some scarring in LLL and over the left apex; calcified granuloma in the rt lung. could be related to old TB.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0348_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0348_1.png
+montgomery,0350,MCUCXR_0350_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0350_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 036Y
+suspicious active disease",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0350_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0350_1.png
+montgomery,0352,MCUCXR_0352_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0352_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 025Y
+12x9mm nodule LUL, consistent with large granuloma or some other type of a solitary pulmonary nodule",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0352_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0352_1.png
+montgomery,0354,MCUCXR_0354_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0354_1.png,4892,4020,L,True,True,"Patient's Sex: M 
+Patient's Age: 046Y
+bilateral calcified granulomas scars consistent with inactive TB.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0354_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0354_1.png
+montgomery,0362,MCUCXR_0362_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0362_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 061Y
+rt pleural effusion with some nodular infiltrate in rt lower lung; there are findings also of previous cardiac surgery; suspicious for active TB.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0362_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0362_1.png
+montgomery,0367,MCUCXR_0367_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0367_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 031Y
+cavitary fibronodular infiltrate RUL. typical appearance of active TB.",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0367_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0367_1.png
+montgomery,0369,MCUCXR_0369_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0369_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 031Y
+cavitary nodular infiltrate in RUL; active TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0369_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0369_1.png
+montgomery,0372,MCUCXR_0372_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0372_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 049Y
+rt pleural effusion some infoltrate likely in outer RUL",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0372_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0372_1.png
+montgomery,0375,MCUCXR_0375_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0375_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 049Y
+improving rt pleural effusion and the RUL infiltrate is less apparent",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0375_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0375_1.png
+montgomery,0383,MCUCXR_0383_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0383_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 014Y
+calcified granuloma LUL behind 4th rib anterior",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0383_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0383_1.png
+montgomery,0387,MCUCXR_0387_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0387_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 042Y
+inactive scars RUL",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0387_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0387_1.png
+montgomery,0390,MCUCXR_0390_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0390_1.png,4020,4892,L,False,True,"Patient's Sex: M 
+Patient's Age: 052Y
+Rt apical scarring. LUL scars and some infiltrates as well; findings consistent with TB; ?active",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0390_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0390_1.png
+montgomery,0393,MCUCXR_0393_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0393_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 030Y
+left pleural effusion; best seen on lateral view; with some scar and soft infiltrates in the LUL on the PA and lordotic views; active TB on pleura and lung likely",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0393_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0393_1.png
+montgomery,0399,MCUCXR_0399_1.png,TB,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\CXR_png\MCUCXR_0399_1.png,4020,4892,L,False,True,"Patient's Sex: F 
+Patient's Age: 063Y
+large infiltrate RUL with cavitation plus infiltrate in RML. consistent with active cavitary TB",True,True,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\leftMask\MCUCXR_0399_1.png,C:\Users\abdul\OneDrive\Desktop\Data Preprocessing\Montgomery-County-CXR-Set\MontgomerySet\ManualMask\rightMask\MCUCXR_0399_1.png
