@@ -1,9 +1,9 @@
 # Preprocessing Implementation Plan (Montgomery + Shenzhen, v1)
 
-Status: **Steps 0–6 done and verified for Montgomery + Shenzhen.** Their preprocessing is complete:
-processed, split, normalized, and passing `scripts/verify_outputs.py`. The other sources (TBX11K,
-RSNA, CheXpert, NIH ChestX-ray14, VinDr-CXR, Belarus) haven't been started, pending your go-ahead
-and the cross-source patient-identity decision. This plan is
+Status: **Steps 0–7 done and verified for Montgomery + Shenzhen.** Their preprocessing is complete:
+processed, split, normalized, patient metadata extracted, and passing `scripts/verify_outputs.py`.
+The other sources (TBX11K, RSNA, CheXpert, NIH ChestX-ray14, VinDr-CXR, Belarus) haven't been
+started, pending your go-ahead and the cross-source patient-identity decision. This plan is
 based on actually inspecting the raw files (see `CLAUDE.md` Section 2 for verified findings, not
 assumptions), and only goes as far as: raw folders → verified, resized, split, hash-logged image +
 mask outputs in a **new** sibling folder, ready for a modeling repo to consume. No model code here.
@@ -157,8 +157,10 @@ it, then decide whether to keep, adjust, or discard, before the raw folders are 
 
 ## Step 5 — Patient-level split ✅ DONE for Montgomery + Shenzhen; other 5 sources deferred
 `src/lucidcxr_prep/splits.py` + `scripts/build_splits.py`, covered by `tests/test_splits.py`
-(5 tests). Groups by `patient_id` (already 1:1 with image for both sources, but the code groups
-rather than assumes, per `CLAUDE.md` decision #1).
+(5 tests). Groups by `patient_id` (1:1 with image for Shenzhen; **not** for Montgomery, where 5
+filenames turn out to be repeat scans of 2 real patients, found later via diagnosis-text
+cross-references -- see `CLAUDE.md` Section 2.1. Harmless since Montgomery is never split, but
+the code groups by patient_id rather than assuming 1:1 regardless, per decision #1).
 
 - **Montgomery**: entirely `external_test`, all 138 rows. `montgomery_split.csv` also carries the
   `exclude_from_external_test` flag through from Step 4 (the lordotic-view case).
@@ -204,13 +206,38 @@ and normal cases:
   Both are logged in `CLAUDE.md` Section 5 as inputs to the lesion-report design; they're not
   preprocessing defects.
 
+## Step 7 — Patient metadata (age, sex, diagnosis text) ✅ DONE
+`src/lucidcxr_prep/metadata.py`, run via `scripts/build_metadata.py`. Extracts only sex and age
+(mechanically unambiguous); the diagnosis narrative is carried forward verbatim, with no derived
+clinical flag (e.g. active/inactive TB) -- that would be a clinical judgment call, not an
+engineering one. Written to `data_processed/metadata/{montgomery,shenzhen}_metadata.csv`, not
+`manifests/`, since this is patient-level data needed at train/eval time rather than a build
+artifact; join to the split manifests by `patient_id` rather than duplicating the split column.
+
+Three real format problems found by actually running it over all 800 rows (not by inspection):
+a non-M/F sex code, three infant ages given in months/days instead of years, and sex-word typos/
+no-space variants. A fourth issue was a genuine bug, not a data quirk: `"yrs".rstrip("s")` produced
+`"yr"`, which matched no entry in the unit-divisor dict, silently turning 658 of 662 rows' computed
+age into NaN with no exception raised -- caught only because the printed age range looked
+infant-only. Fixed by classifying units on their first letter instead of stripping a suffix, plus
+an assertion (`n_nan <= 1`) so this class of bug fails loudly next time. All details and the exact
+numbers are in `CLAUDE.md` Section 2.2b.
+
+**Byproduct finding, not something this step was looking for**: reading Montgomery's diagnosis
+text surfaced explicit "same pt as ..." cross-references, revealing that its 138 filenames are
+only 135 distinct real patients (Section 2.1 correction). Harmless for the current pipeline
+(Montgomery is never split), but the "one image per patient" claim this repo made earlier was
+wrong for Montgomery and has been corrected everywhere it appeared (`CLAUDE.md`, `splits.py`,
+this file).
+
 ## Sequencing / what I need from you
-- Steps 0–5 are done for Montgomery + Shenzhen (see status line at the top).
+- Steps 0–7 are done for Montgomery + Shenzhen (see status line at the top).
 - `MCUCXR_0251_1`: resolved — excluded from external-test metrics, not from processing (decision #12).
 - Crop-to-content: resolved — no crop.
 - Shenzhen-normal split ratio: resolved — 228/33/65, matching the TB split's own ratio exactly
   rather than an independently invented number (decision #15).
-- Step 6: done.
-- **Still open**: all steps for the other sources (on hold until you say go), and two
-  lesion-report design questions from Step 6 QC (`CLAUDE.md` Section 5): pleural lesions outside
-  the lung field, and the 96 images without lung masks.
+- Step 6: done. Step 7 (metadata): done.
+- **Still open**: all steps for the other sources (on hold until you say go); two lesion-report
+  design questions from Step 6 QC (`CLAUDE.md` Section 5): pleural lesions outside the lung field,
+  and the 96 images without lung masks; and whether Montgomery's evaluation code should account
+  for its 2 repeat patients (e.g. patient-clustered confidence intervals) when that code is written.

@@ -61,8 +61,18 @@ Montgomery-County-CXR-Set/
 ```
 
 - **Patient ID / label**: filename `MCUCXR_{patient_id}_{label}.png` — `label` is `0` = normal,
-  `1` = active TB. One image per patient (no repeats), so patient-level split == image-level
-  split here. Confirmed count: 80 normal, 58 TB (matches proposal, Section 4.3.1).
+  `1` = active TB. Confirmed count: 80 normal, 58 TB (matches proposal, Section 4.3.1).
+  **Correction: filename IDs are NOT all distinct real patients** — the free-text diagnosis
+  explicitly cross-references repeat scans: `{0113, 0117}` are the same 85-year-old (2 scans, 6
+  months apart) and `{0162, 0166, 0170}` are the same 49-year-old TB patient (3 serial
+  treatment-monitoring scans). So 138 filenames = **135 distinct real patients**, and the 58
+  "TB images" are 55 unique TB patients, not 58. Found by reading the diagnosis text for
+  "same pt" cross-references (`clinical_text` column), not by ID collision — ID collision alone
+  would have missed this, since every filename ID is still unique. Since Montgomery is never
+  split (100% `external_test`, decision #2), this can't cause train/test leakage — but it does
+  mean any confidence interval computed on Montgomery by treating each image as an independent
+  sample (proposal Section 6.3) is slightly optimistic; a patient-clustered CI would be more
+  honest. Not fixed in preprocessing; flagged for whoever writes the evaluation code.
 - **Lung masks**: `leftMask`/`rightMask` cover **all 138 images** (not a subset) — this is the
   lung-field ground truth Montgomery contributes (classification + external calibration test
   set per proposal Section 6.3; Montgomery is *excluded* from segmentation training).
@@ -106,7 +116,11 @@ Shenzhen-Hospital-CXR-Set/
 ```
 
 - **Patient ID / label**: filename `CHNCXR_{patient_id}_{label}.png`, same `0`/`1` convention.
-  326 normal, 336 TB. One image per patient.
+  326 normal, 336 TB. One image per patient — checked for the same repeat-scan pattern found in
+  Montgomery (Section 2.1) by searching all 662 `clinical_text` entries for "same pt"/"prior"/
+  "previous" cross-references; found none. Shenzhen's clinical text is terse (sex/age/diagnosis
+  codes only), so this is weaker evidence than Montgomery's narrative text gave for its own
+  repeats — absence of a mention isn't proof of absence — but it's the best available signal.
 - **Image mode is NOT uniform** — verified across the full 662-file set, not a sample: **635
   files are palette-mode (`'P'`)**, **27 are `'RGB'`** (an initial 15-file sample only caught
   `'P'` and missed this; the mode-based assertion in `sources/shenzhen.py` is what caught it).
@@ -116,19 +130,36 @@ Shenzhen-Hospital-CXR-Set/
 - **Resolution**: varies per image (not a fixed size), roughly square but not exactly
   (e.g. `2986×2992`, `2573×2917`, `1250×1136`) — genuine per-scan variation, not a rotation
   artifact (unlike Montgomery, width/height are always close, never an exact swap pair).
-- **Lesion masks = two independent annotation sets**, `Annotations/` and `Annotations-2/`
-  (two annotators or two annotation passes). Each contains **one binary mask PNG per
-  abnormality-type-per-image** (e.g. `CHNCXR_0327_1_Calcified_Nodule_2.png`,
-  `CHNCXR_0327_1_Clustered_Nodule_(2mm-5mm_apart)_1.png`), covering 330 images in `Annotations/`
-  and 323 in `Annotations-2/` (not identical image sets — verified via diff, ~13 images differ
-  between the two). Mask pixel dimensions match their source CXR exactly.
+- **Lesion masks: `Annotations/` and `Annotations-2/`** — **not two independent reader sets**,
+  contrary to what this doc originally said (corrected after checking the actual Yang et al.,
+  2022 paper directly rather than guessing). The paper describes a single consensus workflow: a
+  junior radiologist labels, a senior radiologist reviews, "consensus reached for all cases" —
+  one final set, and its own stated count, "330 of 336 images show visible TB signs," matches
+  `Annotations/` exactly. The official NLM page for this dataset lists only one `Annotations/`
+  folder. So `Annotations-2/`'s provenance is *not* documented anywhere official; empirically
+  (checked directly) it shares 317 images with `Annotations/` at a mean IoU of 0.36 (moderate
+  overlap, never identical, never zero) — related to the same underlying work, most plausibly an
+  earlier draft pass, but not a verified independent second reading. **Don't use it as an
+  inter-rater-reliability signal** — that would overstate what's actually known about it.
+  Each folder contains **one binary mask PNG per abnormality-type-per-image** (e.g.
+  `CHNCXR_0327_1_Calcified_Nodule_2.png`), covering 330 images in `Annotations/` and 323 in
+  `Annotations-2/`. Mask pixel dimensions match their source CXR exactly.
   The proposal's "336 radiologist-annotated pixel-level TB lesion masks" / "330 of 336 show
   visible TB signs" (Yang et al., 2022) means: **per image, union all abnormality masks from one
   annotation set into a single binary TB-lesion mask**; the 6 TB-positive images with no mask in
   a set have an empty (all-zero) reference mask, which is expected and must be preserved as
   "empty", never skipped or treated as missing data.
-  Decision: use `Annotations/` (330 images) as primary ground truth; `Annotations-2/` is
-  available for an inter-annotator agreement check if time allows, not required for v1.
+  Decision: use `Annotations/` (330 images, matching the paper's own published count) as the
+  lesion-mask ground truth; `Annotations-2/` is kept on disk but not used for training or metrics.
+- **Some abnormality types are pleural/mediastinal, not parenchymal** (found while investigating
+  why TB lesion pixels sometimes fall outside the lung-field mask): Pleural_Effusion (74.5% of its
+  own pixels outside lung field), Pleural_Thickening (56.9%), Apical_Thickening (49.0%), Adenopathy
+  (32.7%) — vs. 0.4–11% for nodules/infiltrates/cavities, which are genuinely intra-parenchymal.
+  This is anatomically expected, not a registration bug: the lung-field mask traces the aerated
+  lung silhouette, and pleural/mediastinal findings sit outside it by definition, even though
+  they're real TB manifestations the radiologist correctly flagged. Affects the structured
+  report's "% lung field involved" field (Section 5), not the masks or training data themselves —
+  those stay exactly as annotated; we don't get to overrule a radiologist's read.
 - The JSON files are the polygon source-of-truth (VIA format: `all_points_x`/`all_points_y` per
   region, one region per abnormality instance) that the PNG masks were rasterized from. We work
   from the rasterized PNG masks, not the JSON, for v1 (simpler, already pixel-aligned); JSON is
@@ -143,6 +174,43 @@ Shenzhen-Hospital-CXR-Set/
   source on hand (Section 4, decision revisited below): Montgomery stays external-test-only, and
   the auxiliary lung-field supervision the proposal wants now comes from Shenzhen itself, matching
   the proposal's original design.
+
+### 2.2b Patient metadata (age, sex, diagnosis text)
+
+`ClinicalReadings/*.txt` is free text, not structured — `src/lucidcxr_prep/metadata.py` extracts
+only what's mechanically unambiguous (**sex**, **age**) and carries the **raw diagnosis narrative
+forward untouched**. No clinical interpretation (e.g. "is this active or inactive TB") is derived
+from it — see decision below. Output: `data_processed/metadata/{montgomery,shenzhen}_metadata.csv`
+(patient-level data needed at train/eval time, so it lives next to images/masks, not in the
+repo's `manifests/`; join by `patient_id` to the split manifests when needed, rather than
+duplicating the split column, so the two can't drift out of sync).
+
+Format is far less regular than it first looked — every one of the following was found by
+actually running the parser over all 800 rows, not by inspecting a sample:
+- **Montgomery sex is not always M/F**: one patient (`0080`, age 5, normal) is coded `'O'`.
+  Passed through as-is; not guessed at or remapped.
+- **Shenzhen age units vary**: 658 of 662 say "yrs", but 2 patients are given in **months** and 1
+  in **days** (infants), and 1 has no unit at all. Treating the raw number as years by default
+  would have mislabeled a 16-month-old as 16 years old. `age_value` + `age_unit` are stored
+  separately; `age_years` is only populated when the unit is actually known (NaN for the 1
+  unitless row, not guessed).
+  **First bug caught by the sanity check, not by an exception**: an initial unit-normalization
+  routine (`"yrs".rstrip("s")` → `"yr"`, which matched no dict key) silently turned 658 of 662
+  rows' `age_years` into NaN with no error — caught only because the printed summary showed an
+  implausible age range. Fixed by classifying units on their first letter instead of stripping
+  suffixes, plus an explicit assertion that no more than 1 row may have unresolved `age_years`.
+- **Shenzhen sex spelling**: `"femal"` (typo for "female") appears in the data, alongside
+  no-space variants (`"female24yrs"`) and trailing commas (`"male ,"`). All handled.
+- **Montgomery images aren't all distinct real patients** (found while reading diagnosis text,
+  not from ID collisions): see the correction in Section 2.1. `diagnosis_text` is exactly where
+  this surfaced (`"(same pt as MCUCXR_0162_1)"`), which is itself the argument for keeping the
+  raw text rather than only structured fields.
+
+**Decision: no derived "active/inactive TB" flag.** Montgomery's free text frequently mixes both
+in one note (e.g. *"old inactive disease in RL and new active TB in LL"*) or hedges (*"?active"*).
+Classifying that from keywords would be a clinical judgment call, not an engineering one — the
+same principle already applied to the pleural-lesion masks above. `diagnosis_text` is preserved
+verbatim for a human (or a later, deliberate NLP effort) to read directly.
 
 ### 2.3 Not yet present (future sources, referenced by the proposal)
 
@@ -179,7 +247,8 @@ genuinely needs new logic (e.g. actual DICOM decoding, which neither current sou
   │   ├── transforms.py       # pad-to-square + bicubic resize (images and masks)
   │   ├── pipeline.py         # per-row orchestration: load -> pad -> resize -> save -> hash
   │   ├── splits.py           # seeded patient-level splits
-  │   └── normalization.py    # train-split mean/std
+  │   ├── normalization.py    # train-split mean/std
+  │   └── metadata.py         # sex/age extraction from free-text ClinicalReadings
   ├── scripts/                # run in this order:
   │   ├── build_manifests.py       # Step 1
   │   ├── inspect_orientation.py   # Step 2 (Montgomery contact sheets)
@@ -187,7 +256,8 @@ genuinely needs new logic (e.g. actual DICOM decoding, which neither current sou
   │   ├── build_splits.py          # Step 5 (pinned; --force to redraw)
   │   ├── compute_normalization.py # Step 6a
   │   ├── verify_outputs.py        # Step 6b -- acceptance check, run after any re-processing
-  │   └── qc_overlays.py           # Step 6c (overlay sheets for human review)
+  │   ├── qc_overlays.py           # Step 6c (overlay sheets for human review)
+  │   └── build_metadata.py        # Step 7 -- writes to data_processed/metadata/, not manifests/
   └── tests/                  # pytest, 18 tests: manifests, transforms/masks, splits, stats
   ```
 - **Output location**: processed data is **never** written into the raw folders or mixed with
@@ -196,10 +266,12 @@ genuinely needs new logic (e.g. actual DICOM decoding, which neither current sou
   `manifests/` in this repo. This lets you `ls` and open sample PNGs in the new folder to eyeball
   quality before anything touches the original two folders.
 - **Split rule (decided)**: all splits are **patient-level**, keyed on the numeric ID embedded in
-  the filename (`MCUCXR_XXXX`, `CHNCXR_XXXX`). For Montgomery and Shenzhen specifically this is
-  equivalent to an image-level split (one image per patient, confirmed by ID uniqueness), but the
-  split code always groups by patient ID rather than assuming 1:1, so it doesn't silently break
-  when a multi-image-per-patient source (e.g. VinDr-CXR) is added later.
+  the filename (`MCUCXR_XXXX`, `CHNCXR_XXXX`). For Shenzhen this coincides with an image-level
+  split (no repeat-patient evidence found — checked, see Section 2.2). **For Montgomery it does
+  not**: 5 of the 138 filenames are repeat scans of 2 real patients (Section 2.1) — harmless only
+  because Montgomery is never split (100% `external_test`). The split code groups by patient ID
+  rather than assuming 1:1 regardless, so it doesn't silently break when a multi-image-per-patient
+  source (e.g. VinDr-CXR) is added later, or if Montgomery's role ever changes.
 - **Held-out-by-design, not by random split**: Montgomery is excluded from all TB segmentation
   training/validation and reserved as an external classification+calibration test set (per
   proposal Section 4.3.1/6.3) — this is a fixed role, not something the random split should
@@ -276,6 +348,16 @@ genuinely needs new logic (e.g. actual DICOM decoding, which neither current sou
 19. **`scripts/verify_outputs.py` is the acceptance check**: run it after any re-processing. It
     re-hashes every output, checks counts, formats, and splits, and checks that no lesion was lost
     to downsampling. It has guards so that no check can pass vacuously (one did at first).
+20. **Patient metadata (sex, age) is extracted; clinical interpretation is not.** Only sex and age
+    are pulled from `ClinicalReadings`; the diagnosis narrative is kept as raw text. No
+    active/inactive-TB flag is derived — that's a clinical judgment call, matching the same
+    principle already applied to the pleural lesion masks (Section 2.2). Output lives in
+    `data_processed/metadata/`, not `manifests/`, since it's training/eval-time patient data, not
+    a build artifact (Section 2.2b).
+21. **Montgomery is 135 real patients, not 138** — 5 filenames are repeat scans of 2 patients,
+    found via diagnosis-text cross-references while building the metadata extraction, not from
+    any ID collision. Doesn't cause leakage (Montgomery is never split) but is corrected
+    everywhere the old "one image per patient, no repeats" claim appeared (Section 2.1).
 
 ## 5. Open items / known gaps (for you, not silently worked around)
 

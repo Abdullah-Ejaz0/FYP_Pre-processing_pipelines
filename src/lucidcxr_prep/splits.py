@@ -10,9 +10,12 @@ proposal-specified ratio, so they're split at the *same proportions* the TB spli
 uses (235/336, 34/336, 67/336 ~= 69.9%/10.1%/19.9%) rather than an arbitrary new number --
 scaled to 326 images this is 228/33/65.
 
-Both sources have exactly one image per patient (verified, CLAUDE.md Section 2), so "patient-level
-split" and "image-level split" coincide here -- the split still keys off patient_id, not row
-index, so the same code doesn't silently break on a future source with repeat patients.
+Shenzhen has one image per patient (checked for repeat-scan evidence in the clinical text, found
+none). Montgomery does NOT: 5 of its 138 filenames are repeat scans of 2 real patients (found via
+"same pt as ..." cross-references in the diagnosis text -- see CLAUDE.md Section 2.1). Harmless
+here only because Montgomery is never split (100% external_test). The split code keys off
+patient_id rather than row index regardless, so it doesn't silently break on a future source with
+real repeat-patient splitting needs.
 
 Once written, a split CSV is meant to be pinned: re-running scripts/build_splits.py without
 --force will refuse to overwrite an existing split file, so a later code change (e.g. a numpy
